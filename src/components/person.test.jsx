@@ -4,7 +4,8 @@ import { render, screen } from "@testing-library/react"
 
 test("displays name based on props", () => {
     const name="bob"
-    render(<Person name={name} />)
+    const number='12345-678910-1112'
+    render(<Person name={name} number={number} />)
 
     expect(screen.getByText(name)).toBeTruthy()
 })

@@ -12,6 +12,8 @@ test("calls submit handler with new value", async () => {
     const submitButton = screen.getByText("add")
     await userEvent.type(input, testName)
     await userEvent.click(submitButton)
-
+    
     expect(submitHandler).toHaveBeenCalledWith(testName)
 })
+
+testthisstupidthing
