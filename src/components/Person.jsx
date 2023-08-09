@@ -1,8 +1,6 @@
 const Person = (props) => {
-    return(
-        <p>{`${props.name}: ${props.number}`}</p>
-    )
-
+  return(
+    <p role="paragraph">{`${props.name}: ${props.number}`}</p>
+  )
 }
-
 export default Person
