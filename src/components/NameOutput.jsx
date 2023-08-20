@@ -1,7 +1,7 @@
 import Person from './Person'
 
 const NameOutput = (props) => {
-  //console.log("props", props)
+  console.log("NameOutput props", props)
   return(
     <div id="outputDiv">
       {props.persons.map(

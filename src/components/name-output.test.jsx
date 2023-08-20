@@ -1,6 +1,5 @@
-import { test, vi, expect, vitest } from "vitest"
-import {render, screen, act, waitFor } from "@testing-library/react"
-import userEvent from "@testing-library/user-event"
+import { test, expect } from "vitest"
+import { render, screen } from "@testing-library/react"
 import NameOutput from './NameOutput'
 
 test("outputs the list of names in the phonebook", async () => {

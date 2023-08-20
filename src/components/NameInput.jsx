@@ -1,4 +1,4 @@
-import { useState } from 'react' 
+import { useState } from 'react'
 
 const NameInput = (props) => {
   const [newName, setNewName] = useState('')
@@ -6,17 +6,17 @@ const NameInput = (props) => {
 
   //updates the value of the input field dynamically by setting newName
   const handleNameChange = (event) => {
-    setNewName(event.target.value) 
+    setNewName(event.target.value)
   }
 
   //updates the value of the input field dynamically by setting newName
   const handleNumberChange = (event) => {
-    setNewNumber(event.target.value) 
+    setNewNumber(event.target.value)
   }
 
-  const clearInput = () =>{
+  const clearInput = () => {
     setNewName('');
-    setNewNumber(''); 
+    setNewNumber('');
   }
 
   const handleClick = () => {
@@ -24,13 +24,13 @@ const NameInput = (props) => {
     clearInput()
   }
 
-  return( 
+  return (
     <form onSubmit={(e) => e.preventDefault()}>
       <div>
-        <label htmlFor="name" >name:</label> <input id="name" value={newName} onChange={handleNameChange}/>
+        <label htmlFor="name" >name:</label> <input id="name" value={newName} onChange={handleNameChange} />
       </div>
       <div>
-        <label htmlFor="number" >number:</label> <input id="number" value={newNumber} onChange={handleNumberChange}/>
+        <label htmlFor="number" >number:</label> <input id="number" value={newNumber} onChange={handleNumberChange} />
       </div>
       <div>
         <button type="button" onClick={handleClick} >add</button>
